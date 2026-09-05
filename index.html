@@ -33,29 +33,29 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-sky-500 selection:text-slate-950">
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-sky-500 selection:text-slate-950 overflow-x-hidden">
 
   <!-- =========================================================================
        BARRA SUPERIOR DE INFORMACIÓN Y ATENCIÓN URGENTE
        ========================================================================= -->
-  <div class="bg-slate-900 border-b border-slate-800 text-xs py-2 px-4 text-slate-400">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+  <div class="bg-slate-900 border-b border-slate-800 text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1.5 sm:gap-2">
+      <div class="flex items-center gap-2 sm:gap-4 flex-wrap justify-center sm:justify-start">
         <span class="flex items-center gap-1.5 text-emerald-400 font-medium">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
           Taller disponible hoy
         </span>
-        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden sm:inline text-slate-600">|</span>
         <span class="flex items-center gap-1">
-          <i class="fa-solid fa-screwdriver-wrench text-sky-400"></i> Servicio a Domicilio y en Taller
+          <i class="fa-solid fa-screwdriver-wrench text-sky-400"></i> Servicio a Domicilio y Taller
         </span>
         <span class="hidden md:inline text-slate-600">|</span>
-        <span class="flex items-center gap-1 business-schedule">
+        <span class="hidden sm:flex items-center gap-1 business-schedule">
           <i class="fa-regular fa-clock text-sky-400"></i> Lun - Sáb: 8:00 AM a 7:00 PM
         </span>
       </div>
       <div class="flex items-center gap-4">
-        <a href="tel:+584149136597" class="hover:text-sky-400 transition-colors flex items-center gap-1.5">
+        <a href="tel:+584149136597" class="hover:text-sky-400 transition-colors flex items-center gap-1.5 font-semibold text-slate-300">
           <i class="fa-solid fa-phone text-sky-400"></i> <span class="business-phone">+58 414 913-6597</span>
         </a>
       </div>
@@ -65,17 +65,17 @@
   <!-- =========================================================================
        CABECERA Y NAVEGACIÓN
        ========================================================================= -->
-  <header class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur-md border-b border-slate-900 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-900 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
       
       <!-- LOGO -->
-      <a href="#" class="flex items-center gap-3 group">
-        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-600 to-cyan-400 flex items-center justify-center text-slate-950 shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
-          <i class="fa-solid fa-microchip text-xl"></i>
+      <a href="#" class="flex items-center gap-2.5 sm:gap-3 group">
+        <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-tr from-sky-600 to-cyan-400 flex items-center justify-center text-slate-950 shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-microchip text-lg sm:text-xl"></i>
         </div>
         <div>
-          <span class="text-xl font-extrabold tracking-tight text-white block business-name">MasterTech</span>
-          <span class="text-[11px] font-semibold tracking-wider uppercase text-sky-400 block -mt-1">Servicio Técnico PC</span>
+          <span class="text-lg sm:text-xl font-extrabold tracking-tight text-white block business-name">MasterTech</span>
+          <span class="text-[10px] sm:text-[11px] font-semibold tracking-wider uppercase text-sky-400 block -mt-1">Servicio Técnico PC</span>
         </div>
       </a>
 
@@ -90,7 +90,7 @@
         <a href="#contacto" class="hover:text-sky-400 transition-colors">Contacto</a>
       </nav>
 
-      <!-- BOTÓN CTA WHATSAPP -->
+      <!-- BOTÓN CTA WHATSAPP ESCRITORIO -->
       <div class="hidden sm:flex items-center gap-3">
         <a id="nav-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/25 transition-all hover:scale-105">
           <i class="fa-brands fa-whatsapp text-lg"></i>
@@ -99,13 +99,13 @@
       </div>
 
       <!-- BOTÓN MENÚ MÓVIL -->
-      <button id="mobile-menu-btn" class="lg:hidden text-slate-400 hover:text-white p-2 text-2xl focus:outline-none" aria-label="Abrir menú">
+      <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-white p-2 text-2xl focus:outline-none" aria-label="Abrir menú">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
 
     <!-- MENÚ DESPLEGABLE MÓVIL -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-6 py-5 space-y-4">
+    <div id="mobile-menu" class="hidden lg:hidden bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-6 py-5 space-y-4">
       <a href="#inicio" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-sky-400">Inicio</a>
       <a href="#servicios" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-sky-400">Servicios</a>
       <a href="#cotizador" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-sky-400">Cotizador Rápido</a>
@@ -121,57 +121,57 @@
     <!-- =========================================================================
          HERO SECTION
          ========================================================================= -->
-    <section id="inicio" class="relative py-16 md:py-24 overflow-hidden">
+    <section id="inicio" class="relative py-10 sm:py-16 md:py-24 overflow-hidden">
       <!-- Glow ambiental de fondo -->
-      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
-      <div class="absolute top-1/2 right-10 w-[350px] h-[350px] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-sky-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+      <div class="absolute top-1/2 right-10 w-[200px] sm:w-[350px] h-[200px] sm:h-[350px] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           <!-- COLUMNA IZQUIERDA: MENSAJE PRINCIPAL -->
-          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="lg:col-span-7 space-y-5 sm:space-y-6 text-center lg:text-left">
             
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-950/80 border border-sky-500/30 text-sky-400 text-xs font-semibold tracking-wide shadow-sm">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-950/80 border border-sky-500/30 text-sky-400 text-[11px] sm:text-xs font-semibold tracking-wide shadow-sm">
               <i class="fa-solid fa-shield-halved text-sky-400"></i>
               Soporte Técnico Informático Profesional & Garantizado
             </div>
 
-            <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            <h1 class="text-3xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-tight">
               Tu Computadora o Laptop <span class="text-gradient">rápida, segura</span> y como nueva hoy mismo.
             </h1>
 
-            <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
               ¿Tu equipo no enciende, está muy lento o tiene virus? Soy técnico informático especializado en diagnóstico exacto, reparación de componentes, mantenimiento térmico e instalación de programas.
             </p>
 
             <!-- PUNTOS CLAVE DE CONFIANZA -->
-            <div class="grid grid-cols-2 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-300 max-w-md mx-auto lg:mx-0">
+            <div class="grid grid-cols-2 gap-2.5 sm:gap-3 pt-2 text-xs sm:text-sm text-slate-300 max-w-md mx-auto lg:mx-0 text-left">
               <div class="flex items-center gap-2">
-                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                <i class="fa-solid fa-circle-check text-emerald-400 shrink-0"></i>
                 <span>Garantía por escrito</span>
               </div>
               <div class="flex items-center gap-2">
-                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                <i class="fa-solid fa-circle-check text-emerald-400 shrink-0"></i>
                 <span>Diagnóstico honesto</span>
               </div>
               <div class="flex items-center gap-2">
-                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                <i class="fa-solid fa-circle-check text-emerald-400 shrink-0"></i>
                 <span>Respaldo de archivos seguro</span>
               </div>
               <div class="flex items-center gap-2">
-                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                <i class="fa-solid fa-circle-check text-emerald-400 shrink-0"></i>
                 <span>A domicilio o en taller</span>
               </div>
             </div>
 
             <!-- BOTONES DE ACCIÓN -->
-            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-              <a id="hero-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-emerald-600/30 text-base transition-all hover:scale-105">
-                <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 sm:gap-4 pt-3 sm:pt-4">
+              <a id="hero-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-xl shadow-emerald-600/30 text-sm sm:text-base transition-all hover:scale-105">
+                <i class="fa-brands fa-whatsapp text-xl sm:text-2xl"></i>
                 <span>Escríbeme por WhatsApp</span>
               </a>
-              <a href="#cotizador" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-100 font-semibold px-7 py-4 rounded-xl border border-slate-700 hover:border-sky-500/50 text-base transition-all">
+              <a href="#cotizador" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-100 font-semibold px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl border border-slate-700 hover:border-sky-500/50 text-sm sm:text-base transition-all">
                 <i class="fa-solid fa-calculator text-sky-400"></i>
                 <span>Cotizar Reparación</span>
               </a>
@@ -180,30 +180,30 @@
           </div>
 
           <!-- COLUMNA DERECHA: TARJETA VISUAL TECNOLÓGICA -->
-          <div class="lg:col-span-5">
-            <div class="glass-card rounded-2xl p-6 sm:p-8 shadow-2xl relative border border-slate-800">
+          <div class="lg:col-span-5 mt-4 lg:mt-0">
+            <div class="glass-card rounded-2xl p-4 sm:p-8 shadow-2xl relative border border-slate-800">
               
               <!-- Cabecera de la tarjeta con estilo terminal/técnico -->
-              <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
-                <div class="flex items-center gap-2">
-                  <span class="w-3 h-3 rounded-full bg-rose-500"></span>
-                  <span class="w-3 h-3 rounded-full bg-amber-500"></span>
-                  <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
-                  <span class="text-xs font-mono text-slate-400 ml-2">diagnostico_sistema.exe</span>
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3 sm:pb-4 mb-4 sm:mb-6">
+                <div class="flex items-center gap-1.5 sm:gap-2">
+                  <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-rose-500"></span>
+                  <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-amber-500"></span>
+                  <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-500"></span>
+                  <span class="text-[10px] sm:text-xs font-mono text-slate-400 ml-1 sm:ml-2 truncate max-w-[130px] sm:max-w-none">diagnostico_sistema.exe</span>
                 </div>
-                <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">
+                <span class="text-[10px] sm:text-xs font-semibold px-2 sm:px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800 shrink-0">
                   Listo para Reparar
                 </span>
               </div>
 
               <!-- Comparativas visuales de optimización -->
-              <div class="space-y-4">
+              <div class="space-y-3.5 sm:space-y-4">
                 
                 <!-- Velocidad SSD -->
-                <div class="bg-slate-900/90 rounded-xl p-3.5 border border-slate-800">
-                  <div class="flex justify-between text-xs mb-1.5">
-                    <span class="text-slate-300 font-medium"><i class="fa-solid fa-bolt text-amber-400 mr-1.5"></i> Velocidad de Arranque (SSD vs HDD)</span>
-                    <span class="text-emerald-400 font-bold font-mono">10x más veloz</span>
+                <div class="bg-slate-900/90 rounded-xl p-3 sm:p-3.5 border border-slate-800">
+                  <div class="flex justify-between text-xs mb-1.5 gap-2">
+                    <span class="text-slate-300 font-medium truncate"><i class="fa-solid fa-bolt text-amber-400 mr-1"></i> Velocidad (SSD vs HDD)</span>
+                    <span class="text-emerald-400 font-bold font-mono shrink-0">10x más veloz</span>
                   </div>
                   <div class="w-full bg-slate-800 rounded-full h-2">
                     <div class="bg-gradient-to-r from-sky-400 to-emerald-400 h-2 rounded-full" style="width: 95%"></div>
@@ -211,10 +211,10 @@
                 </div>
 
                 <!-- Temperatura -->
-                <div class="bg-slate-900/90 rounded-xl p-3.5 border border-slate-800">
-                  <div class="flex justify-between text-xs mb-1.5">
-                    <span class="text-slate-300 font-medium"><i class="fa-solid fa-temperature-arrow-down text-cyan-400 mr-1.5"></i> Reducción Térmica (Pasta Térmica)</span>
-                    <span class="text-sky-400 font-bold font-mono">-35°C (Refrigerada)</span>
+                <div class="bg-slate-900/90 rounded-xl p-3 sm:p-3.5 border border-slate-800">
+                  <div class="flex justify-between text-xs mb-1.5 gap-2">
+                    <span class="text-slate-300 font-medium truncate"><i class="fa-solid fa-temperature-arrow-down text-cyan-400 mr-1"></i> Reducción Térmica</span>
+                    <span class="text-sky-400 font-bold font-mono shrink-0">-35°C</span>
                   </div>
                   <div class="w-full bg-slate-800 rounded-full h-2">
                     <div class="bg-sky-400 h-2 rounded-full" style="width: 80%"></div>
@@ -222,10 +222,10 @@
                 </div>
 
                 <!-- Seguridad y Salud -->
-                <div class="bg-slate-900/90 rounded-xl p-3.5 border border-slate-800">
-                  <div class="flex justify-between text-xs mb-1.5">
-                    <span class="text-slate-300 font-medium"><i class="fa-solid fa-shield-virus text-emerald-400 mr-1.5"></i> Desinfección de Malware & Basura</span>
-                    <span class="text-emerald-400 font-bold font-mono">100% Limpio</span>
+                <div class="bg-slate-900/90 rounded-xl p-3 sm:p-3.5 border border-slate-800">
+                  <div class="flex justify-between text-xs mb-1.5 gap-2">
+                    <span class="text-slate-300 font-medium truncate"><i class="fa-solid fa-shield-virus text-emerald-400 mr-1"></i> Desinfección Malware</span>
+                    <span class="text-emerald-400 font-bold font-mono shrink-0">100% Limpio</span>
                   </div>
                   <div class="w-full bg-slate-800 rounded-full h-2">
                     <div class="bg-emerald-500 h-2 rounded-full" style="width: 100%"></div>
@@ -235,13 +235,13 @@
               </div>
 
               <!-- Tarjeta de atención rápida -->
-              <div class="mt-6 p-4 rounded-xl bg-gradient-to-r from-sky-950/60 to-indigo-950/60 border border-sky-500/20 flex items-center gap-4">
-                <div class="w-12 h-12 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl shrink-0">
+              <div class="mt-5 sm:mt-6 p-3.5 sm:p-4 rounded-xl bg-gradient-to-r from-sky-950/60 to-indigo-950/60 border border-sky-500/20 flex items-center gap-3.5 sm:gap-4">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center text-lg sm:text-xl shrink-0">
                   <i class="fa-solid fa-laptop-medical"></i>
                 </div>
                 <div>
-                  <h4 class="text-sm font-bold text-white">¿Equipo de emergencia?</h4>
-                  <p class="text-xs text-slate-300">Diagnóstico prioritario para trabajo, estudios o empresas.</p>
+                  <h4 class="text-xs sm:text-sm font-bold text-white">¿Equipo de emergencia?</h4>
+                  <p class="text-[11px] sm:text-xs text-slate-300">Diagnóstico prioritario para trabajo, estudios o empresas.</p>
                 </div>
               </div>
 
@@ -255,28 +255,28 @@
     <!-- =========================================================================
          BARRAS DE IMPACTO Y MÉTRICAS
          ========================================================================= -->
-    <section class="border-y border-slate-800 bg-slate-900/50 py-10">
+    <section class="border-y border-slate-800 bg-slate-900/50 py-8 sm:py-10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
           
-          <div class="p-3">
-            <div class="text-3xl sm:text-4xl font-extrabold text-sky-400 font-heading">+5 Años</div>
-            <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Experiencia Técnica</div>
+          <div class="p-2 sm:p-3">
+            <div class="text-2xl sm:text-4xl font-extrabold text-sky-400 font-heading">+5 Años</div>
+            <div class="text-[11px] sm:text-sm text-slate-400 mt-1 font-medium">Experiencia Técnica</div>
           </div>
 
-          <div class="p-3">
-            <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-heading">+1,500</div>
-            <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Equipos Reparados</div>
+          <div class="p-2 sm:p-3">
+            <div class="text-2xl sm:text-4xl font-extrabold text-emerald-400 font-heading">+1,500</div>
+            <div class="text-[11px] sm:text-sm text-slate-400 mt-1 font-medium">Equipos Reparados</div>
           </div>
 
-          <div class="p-3">
-            <div class="text-3xl sm:text-4xl font-extrabold text-indigo-400 font-heading">100%</div>
-            <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Garantía por Escrito</div>
+          <div class="p-2 sm:p-3">
+            <div class="text-2xl sm:text-4xl font-extrabold text-indigo-400 font-heading">100%</div>
+            <div class="text-[11px] sm:text-sm text-slate-400 mt-1 font-medium">Garantía por Escrito</div>
           </div>
 
-          <div class="p-3">
-            <div class="text-3xl sm:text-4xl font-extrabold text-amber-400 font-heading">Express</div>
-            <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Entregas el Mismo Día</div>
+          <div class="p-2 sm:p-3">
+            <div class="text-2xl sm:text-4xl font-extrabold text-amber-400 font-heading">Express</div>
+            <div class="text-[11px] sm:text-sm text-slate-400 mt-1 font-medium">Entregas el Mismo Día</div>
           </div>
 
         </div>
@@ -286,33 +286,33 @@
     <!-- =========================================================================
          SECCIÓN DE SERVICIOS
          ========================================================================= -->
-    <section id="servicios" class="py-20 bg-slate-950 relative">
+    <section id="servicios" class="py-14 sm:py-20 bg-slate-950 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
           <h2 class="text-xs sm:text-sm uppercase tracking-widest text-sky-400 font-bold mb-2">Lo que hago por tu equipo</h2>
-          <p class="text-3xl sm:text-4xl font-extrabold text-white">Servicios Técnicos Profesionales</p>
-          <p class="text-slate-400 mt-3 text-base">
+          <p class="text-2xl sm:text-4xl font-extrabold text-white">Servicios Técnicos Profesionales</p>
+          <p class="text-slate-400 mt-2 sm:mt-3 text-sm sm:text-base">
             Soluciones reales para computadoras de escritorio, laptops y All-in-One de todas las marcas.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           
           <!-- SERVICIO 1: REPARACIÓN HARDWARE -->
-          <div class="glass-card rounded-2xl p-7 border border-slate-800 flex flex-col justify-between group">
+          <div class="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800 flex flex-col justify-between group">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-sky-500 group-hover:text-slate-950 transition-colors">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:bg-sky-500 group-hover:text-slate-950 transition-colors">
                 <i class="fa-solid fa-toolbox"></i>
               </div>
-              <h3 class="text-xl font-bold text-white mb-2">Reparación de Hardware & Diagnóstico</h3>
-              <p class="text-sm text-slate-400 mb-5 leading-relaxed">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Reparación de Hardware & Diagnóstico</h3>
+              <p class="text-xs sm:text-sm text-slate-400 mb-5 leading-relaxed">
                 Diagnóstico exhaustivo para equipos que no encienden, pantallas rotas o con rayas, teclados dañados, fuentes quemadas y fallos de motherboard.
               </p>
               <ul class="text-xs text-slate-300 space-y-2 mb-6">
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-400"></i> Reparación de fuentes y placas</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-400"></i> Cambio de pantallas y bisagras de laptop</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-400"></i> Reparación de puertos USB, HDMI y Jack</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-400 shrink-0"></i> Reparación de fuentes y placas</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-400 shrink-0"></i> Cambio de pantallas y bisagras de laptop</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-400 shrink-0"></i> Reparación de puertos USB, HDMI y Jack</li>
               </ul>
             </div>
             <a href="#cotizador" class="text-xs font-bold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1.5 mt-2">
@@ -321,19 +321,19 @@
           </div>
 
           <!-- SERVICIO 2: MANTENIMIENTO TÉRMICO -->
-          <div class="glass-card rounded-2xl p-7 border border-slate-800 flex flex-col justify-between group">
+          <div class="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800 flex flex-col justify-between group">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-colors">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-colors">
                 <i class="fa-solid fa-fan"></i>
               </div>
-              <h3 class="text-xl font-bold text-white mb-2">Mantenimiento Preventivo & Térmico</h3>
-              <p class="text-sm text-slate-400 mb-5 leading-relaxed">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Mantenimiento Preventivo & Térmico</h3>
+              <p class="text-xs sm:text-sm text-slate-400 mb-5 leading-relaxed">
                 ¿Tu laptop calienta mucho o el ventilador suena como turbina? Evita daños graves limpiando el polvo acumulado y cambiando la pasta térmica.
               </p>
               <ul class="text-xs text-slate-300 space-y-2 mb-6">
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Limpieza profunda de disipadores y ventiladores</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Pasta térmica premium (Arctic MX-4 / Grizzly)</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Lubricación de coolers para silencio total</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 shrink-0"></i> Limpieza profunda de disipadores y ventiladores</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 shrink-0"></i> Pasta térmica premium (Arctic MX-4 / Grizzly)</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 shrink-0"></i> Lubricación de coolers para silencio total</li>
               </ul>
             </div>
             <a href="#cotizador" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1.5 mt-2">
@@ -342,19 +342,19 @@
           </div>
 
           <!-- SERVICIO 3: INSTALACIÓN PROGRAMAS Y WINDOWS -->
-          <div class="glass-card rounded-2xl p-7 border border-slate-800 flex flex-col justify-between group">
+          <div class="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800 flex flex-col justify-between group">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-colors">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-colors">
                 <i class="fa-brands fa-windows"></i>
               </div>
-              <h3 class="text-xl font-bold text-white mb-2">Instalación de Programas & Windows</h3>
-              <p class="text-sm text-slate-400 mb-5 leading-relaxed">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Instalación de Programas & Windows</h3>
+              <p class="text-xs sm:text-sm text-slate-400 mb-5 leading-relaxed">
                 Instalación limpia de Sistemas Operativos Windows 10/11 con controladores originales y toda la suite de software que necesitas para trabajar.
               </p>
               <ul class="text-xs text-slate-300 space-y-2 mb-6">
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Microsoft Office (Word, Excel, PowerPoint)</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Programas de diseño, arquitectura y edición</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Drivers actualizados para máximo rendimiento</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 shrink-0"></i> Microsoft Office (Word, Excel, PowerPoint)</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 shrink-0"></i> Programas de diseño, arquitectura y edición</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400 shrink-0"></i> Drivers actualizados para máximo rendimiento</li>
               </ul>
             </div>
             <a href="#cotizador" class="text-xs font-bold text-indigo-400 hover:text-indigo-300 inline-flex items-center gap-1.5 mt-2">
@@ -363,19 +363,19 @@
           </div>
 
           <!-- SERVICIO 4: UPGRADE SSD Y RAM -->
-          <div class="glass-card rounded-2xl p-7 border border-slate-800 flex flex-col justify-between group">
+          <div class="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800 flex flex-col justify-between group">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
                 <i class="fa-solid fa-gauge-high"></i>
               </div>
-              <h3 class="text-xl font-bold text-white mb-2">Aceleración con Disco SSD & RAM</h3>
-              <p class="text-sm text-slate-400 mb-5 leading-relaxed">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Aceleración con Disco SSD & RAM</h3>
+              <p class="text-xs sm:text-sm text-slate-400 mb-5 leading-relaxed">
                 ¡No tires tu computadora vieja! Cambiando el disco duro tradicional por un SSD ultrarrápido tu equipo iniciará en menos de 15 segundos.
               </p>
               <ul class="text-xs text-slate-300 space-y-2 mb-6">
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Discos SSD SATA y NVMe M.2 de alta velocidad</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Ampliación de memoria RAM para multitarea fluida</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Clonación exacta: conservas todos tus programas</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 shrink-0"></i> Discos SSD SATA y NVMe M.2 de alta velocidad</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 shrink-0"></i> Ampliación de memoria RAM para multitarea fluida</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 shrink-0"></i> Clonación exacta: conservas todos tus programas</li>
               </ul>
             </div>
             <a href="#cotizador" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1.5 mt-2">
@@ -384,19 +384,19 @@
           </div>
 
           <!-- SERVICIO 5: VIRUS Y OPTIMIZACIÓN -->
-          <div class="glass-card rounded-2xl p-7 border border-slate-800 flex flex-col justify-between group">
+          <div class="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800 flex flex-col justify-between group">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-rose-500/10 text-rose-400 border border-rose-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-rose-500 group-hover:text-slate-950 transition-colors">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-rose-500/10 text-rose-400 border border-rose-500/20 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:bg-rose-500 group-hover:text-slate-950 transition-colors">
                 <i class="fa-solid fa-shield-virus"></i>
               </div>
-              <h3 class="text-xl font-bold text-white mb-2">Eliminación de Virus & Lentitud</h3>
-              <p class="text-sm text-slate-400 mb-5 leading-relaxed">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Eliminación de Virus & Lentitud</h3>
+              <p class="text-xs sm:text-sm text-slate-400 mb-5 leading-relaxed">
                 Limpieza profunda de troyanos, spyware, publicidad no deseada y archivos basura que saturan el procesador y ponen lenta tu máquina.
               </p>
               <ul class="text-xs text-slate-300 space-y-2 mb-6">
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-400"></i> Desinfección completa sin borrar tus archivos</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-400"></i> Eliminación de programas espía y pop-ups molestos</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-400"></i> Optimización del registro y arranque de Windows</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-400 shrink-0"></i> Desinfección completa sin borrar tus archivos</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-400 shrink-0"></i> Eliminación de programas espía y pop-ups molestos</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-400 shrink-0"></i> Optimización del registro y arranque de Windows</li>
               </ul>
             </div>
             <a href="#cotizador" class="text-xs font-bold text-rose-400 hover:text-rose-300 inline-flex items-center gap-1.5 mt-2">
@@ -405,19 +405,19 @@
           </div>
 
           <!-- SERVICIO 6: RECUPERACIÓN DE DATOS -->
-          <div class="glass-card rounded-2xl p-7 border border-slate-800 flex flex-col justify-between group">
+          <div class="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800 flex flex-col justify-between group">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 flex items-center justify-center text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
                 <i class="fa-solid fa-database"></i>
               </div>
-              <h3 class="text-xl font-bold text-white mb-2">Recuperación de Archivos & Respaldo</h3>
-              <p class="text-sm text-slate-400 mb-5 leading-relaxed">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Recuperación de Archivos & Respaldo</h3>
+              <p class="text-xs sm:text-sm text-slate-400 mb-5 leading-relaxed">
                 ¿Tu disco duro no es reconocido o borraste fotos o documentos cruciales por error? Extracción técnica segura de datos valiosos.
               </p>
               <ul class="text-xs text-slate-300 space-y-2 mb-6">
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Recuperación de discos duros y memorias USB</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Copias de seguridad automáticas en la nube/disco</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Confidencialidad y privacidad 100% garantizada</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400 shrink-0"></i> Recuperación de discos duros y memorias USB</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400 shrink-0"></i> Copias de seguridad automáticas en la nube/disco</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400 shrink-0"></i> Confidencialidad y privacidad 100% garantizada</li>
               </ul>
             </div>
             <a href="#cotizador" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1.5 mt-2">
@@ -433,27 +433,27 @@
     <!-- =========================================================================
          COTIZADOR EXPRESS INTERACTIVO
          ========================================================================= -->
-    <section id="cotizador" class="py-20 bg-slate-900/60 border-y border-slate-800 relative">
+    <section id="cotizador" class="py-14 sm:py-20 bg-slate-900/60 border-y border-slate-800 relative">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center mb-10">
-          <span class="px-3.5 py-1 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+        <div class="text-center mb-8 sm:mb-10">
+          <span class="px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800 text-emerald-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider">
             Cotización Express en 1 Clic
           </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Calcula y Consulta tu Presupuesto</h2>
-          <p class="text-slate-400 mt-2 text-sm">Selecciona tu equipo y el problema para enviarme la consulta directa a WhatsApp.</p>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">Calcula y Consulta tu Presupuesto</h2>
+          <p class="text-slate-400 mt-2 text-xs sm:text-sm">Selecciona tu equipo y el problema para enviarme la consulta directa a WhatsApp.</p>
         </div>
 
-        <div class="glass-card rounded-2xl p-6 sm:p-10 border border-slate-800 shadow-2xl space-y-6">
+        <div class="glass-card rounded-2xl p-5 sm:p-10 border border-slate-800 shadow-2xl space-y-5 sm:space-y-6">
           
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             
             <!-- TIPO DE EQUIPO -->
             <div>
               <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
                 1. ¿Qué tipo de equipo tienes?
               </label>
-              <select id="quote-device" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-sky-500 transition-colors">
+              <select id="quote-device" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-sky-500 transition-colors">
                 <option value="laptop">Laptop / Portátil</option>
                 <option value="pc_torre">PC de Escritorio / Torre</option>
                 <option value="all_in_one">Computadora All-in-One (Todo en Uno)</option>
@@ -466,7 +466,7 @@
               <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
                 2. ¿Cuál es el problema o servicio?
               </label>
-              <select id="quote-service" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-sky-500 transition-colors">
+              <select id="quote-service" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-sky-500 transition-colors truncate">
                 <option value="mantenimiento">Mantenimiento Térmico / Limpieza física</option>
                 <option value="formateo">Formateo e Instalación de Windows + Office</option>
                 <option value="ssd_upgrade">Acelerar con Disco SSD y más RAM</option>
@@ -481,12 +481,12 @@
           </div>
 
           <!-- MODALIDAD DE ATENCIÓN -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div>
               <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
                 3. Modalidad de Atención
               </label>
-              <select id="quote-modality" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-sky-500 transition-colors">
+              <select id="quote-modality" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-sky-500 transition-colors">
                 <option value="taller">Llevar al Taller Técnico</option>
                 <option value="domicilio">Servicio a Domicilio / Oficina</option>
                 <option value="remoto">Soporte Remoto por Internet (para programas/virus)</option>
@@ -498,27 +498,27 @@
               <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
                 4. Detalles de la falla (opcional)
               </label>
-              <input type="text" id="quote-notes" placeholder="Ej: Se apaga a los 10 minutos, o marca Dell..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-sky-500 transition-colors">
+              <input type="text" id="quote-notes" placeholder="Ej: Se apaga a los 10 minutos, marca Dell..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-sky-500 transition-colors">
             </div>
           </div>
 
           <!-- TARJETA DE RESUMEN ESTIMADO -->
-          <div id="quote-result-card" class="bg-slate-950/80 rounded-xl p-4 border border-sky-500/30">
+          <div id="quote-result-card" class="bg-slate-950/80 rounded-xl p-3.5 sm:p-4 border border-sky-500/30">
             <div class="flex items-start gap-3">
-              <i class="fa-solid fa-circle-info text-sky-400 text-lg mt-0.5"></i>
+              <i class="fa-solid fa-circle-info text-sky-400 text-base sm:text-lg mt-0.5 shrink-0"></i>
               <div>
-                <h4 id="quote-summary-text" class="text-sm font-bold text-white">Laptop • Mantenimiento Térmico</h4>
-                <p id="quote-estimate-text" class="text-xs text-slate-400 mt-1">Tiempo estimado: 2 a 4 horas.</p>
+                <h4 id="quote-summary-text" class="text-xs sm:text-sm font-bold text-white">Laptop • Mantenimiento Térmico</h4>
+                <p id="quote-estimate-text" class="text-[11px] sm:text-xs text-slate-400 mt-0.5">Tiempo estimado: 2 a 4 horas.</p>
               </div>
             </div>
           </div>
 
           <!-- BOTÓN DE ENVÍO DIRECTO A WHATSAPP -->
-          <button type="button" id="quote-send-whatsapp" class="w-full flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-xl shadow-xl shadow-emerald-600/30 text-base transition-all hover:scale-[1.01]">
-            <i class="fa-brands fa-whatsapp text-2xl"></i>
+          <button type="button" id="quote-send-whatsapp" class="w-full flex items-center justify-center gap-2.5 sm:gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 sm:py-4 px-4 sm:px-6 rounded-xl shadow-xl shadow-emerald-600/30 text-sm sm:text-base transition-all hover:scale-[1.01]">
+            <i class="fa-brands fa-whatsapp text-xl sm:text-2xl"></i>
             <span>Consultar Presupuesto Exacto por WhatsApp</span>
           </button>
-          <p class="text-center text-xs text-slate-500">Se abrirá WhatsApp con los datos ya escritos. Sin compromiso.</p>
+          <p class="text-center text-[11px] sm:text-xs text-slate-500">Se abrirá WhatsApp con los datos ya escritos. Sin compromiso.</p>
 
         </div>
 
@@ -528,45 +528,45 @@
     <!-- =========================================================================
          ¿POR QUÉ ELEGIRNOS? (VENTAJAS COMPETITIVAS)
          ========================================================================= -->
-    <section id="nosotros" class="py-20 bg-slate-950">
+    <section id="nosotros" class="py-14 sm:py-20 bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          <div class="lg:col-span-5 space-y-6">
+          <div class="lg:col-span-5 space-y-4 sm:space-y-6">
             <span class="text-xs uppercase tracking-widest text-sky-400 font-bold">Confianza y Transparencia</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">¿Por qué confiar en mi servicio técnico?</h2>
-            <p class="text-slate-300 text-sm leading-relaxed">
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white">¿Por qué confiar en mi servicio técnico?</h2>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
               Sé lo valiosa que es tu computadora y la información que guardas en ella. Por eso trabajo con total transparencia, presupuestos claros antes de comenzar y repuestos de primera calidad.
             </p>
 
             <div class="space-y-4 pt-2">
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-lg shrink-0">
+              <div class="flex items-start gap-3.5 sm:gap-4">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-base sm:text-lg shrink-0">
                   <i class="fa-solid fa-file-signature"></i>
                 </div>
                 <div>
-                  <h4 class="text-base font-bold text-white">Presupuesto sin Sorpresas</h4>
+                  <h4 class="text-sm sm:text-base font-bold text-white">Presupuesto sin Sorpresas</h4>
                   <p class="text-xs text-slate-400">Sabrás el costo exacto antes de realizar cualquier cambio o reparación. Sin cargos ocultos.</p>
                 </div>
               </div>
 
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg shrink-0">
+              <div class="flex items-start gap-3.5 sm:gap-4">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-base sm:text-lg shrink-0">
                   <i class="fa-solid fa-lock"></i>
                 </div>
                 <div>
-                  <h4 class="text-base font-bold text-white">Privacidad y Seguridad de Archivos</h4>
+                  <h4 class="text-sm sm:text-base font-bold text-white">Privacidad y Seguridad de Archivos</h4>
                   <p class="text-xs text-slate-400">Tus fotos, documentos y datos personales están 100% seguros y bajo estricta confidencialidad.</p>
                 </div>
               </div>
 
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg shrink-0">
+              <div class="flex items-start gap-3.5 sm:gap-4">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-base sm:text-lg shrink-0">
                   <i class="fa-solid fa-certificate"></i>
                 </div>
                 <div>
-                  <h4 class="text-base font-bold text-white">Garantía por Escrito</h4>
+                  <h4 class="text-sm sm:text-base font-bold text-white">Garantía por Escrito</h4>
                   <p class="text-xs text-slate-400">Todos los servicios y repuestos cuentan con respaldo y soporte posterior directo.</p>
                 </div>
               </div>
@@ -575,29 +575,29 @@
 
           <!-- PROCESO DE 4 PASOS -->
           <div class="lg:col-span-7">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
               
-              <div class="glass-card rounded-2xl p-6 border border-slate-800">
-                <div class="text-2xl font-extrabold text-sky-400 font-mono mb-2">01</div>
-                <h4 class="text-base font-bold text-white mb-1">Contacto Inicial</h4>
+              <div class="glass-card rounded-2xl p-5 sm:p-6 border border-slate-800">
+                <div class="text-xl sm:text-2xl font-extrabold text-sky-400 font-mono mb-1.5 sm:mb-2">01</div>
+                <h4 class="text-sm sm:text-base font-bold text-white mb-1">Contacto Inicial</h4>
                 <p class="text-xs text-slate-400">Me escribes por WhatsApp o me llamas describiendo qué le pasa a tu equipo.</p>
               </div>
 
-              <div class="glass-card rounded-2xl p-6 border border-slate-800">
-                <div class="text-2xl font-extrabold text-emerald-400 font-mono mb-2">02</div>
-                <h4 class="text-base font-bold text-white mb-1">Diagnóstico Preciso</h4>
+              <div class="glass-card rounded-2xl p-5 sm:p-6 border border-slate-800">
+                <div class="text-xl sm:text-2xl font-extrabold text-emerald-400 font-mono mb-1.5 sm:mb-2">02</div>
+                <h4 class="text-sm sm:text-base font-bold text-white mb-1">Diagnóstico Preciso</h4>
                 <p class="text-xs text-slate-400">Reviso la máquina a fondo y te presento un presupuesto claro y detallado.</p>
               </div>
 
-              <div class="glass-card rounded-2xl p-6 border border-slate-800">
-                <div class="text-2xl font-extrabold text-indigo-400 font-mono mb-2">03</div>
-                <h4 class="text-base font-bold text-white mb-1">Reparación Experta</h4>
+              <div class="glass-card rounded-2xl p-5 sm:p-6 border border-slate-800">
+                <div class="text-xl sm:text-2xl font-extrabold text-indigo-400 font-mono mb-1.5 sm:mb-2">03</div>
+                <h4 class="text-sm sm:text-base font-bold text-white mb-1">Reparación Experta</h4>
                 <p class="text-xs text-slate-400">Procedo con el servicio utilizando herramientas de precisión y repuestos verificados.</p>
               </div>
 
-              <div class="glass-card rounded-2xl p-6 border border-slate-800">
-                <div class="text-2xl font-extrabold text-amber-400 font-mono mb-2">04</div>
-                <h4 class="text-base font-bold text-white mb-1">Entrega & Pruebas</h4>
+              <div class="glass-card rounded-2xl p-5 sm:p-6 border border-slate-800">
+                <div class="text-xl sm:text-2xl font-extrabold text-amber-400 font-mono mb-1.5 sm:mb-2">04</div>
+                <h4 class="text-sm sm:text-base font-bold text-white mb-1">Entrega & Pruebas</h4>
                 <p class="text-xs text-slate-400">Pruebas el equipo funcionando perfecto delante de mí y te entrego la garantía.</p>
               </div>
 
@@ -612,75 +612,75 @@
     <!-- =========================================================================
          TESTIMONIOS DE CLIENTES
          ========================================================================= -->
-    <section id="testimonios" class="py-20 bg-slate-900/40 border-y border-slate-800">
+    <section id="testimonios" class="py-14 sm:py-20 bg-slate-900/40 border-y border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
           <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold">Clientes Satisfechos</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Lo que dicen quienes ya repararon con nosotros</h2>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Lo que dicen quienes ya repararon con nosotros</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
           
           <!-- Testimonio 1 -->
-          <div class="glass-card rounded-2xl p-6 border border-slate-800 flex flex-col justify-between">
+          <div class="glass-card rounded-2xl p-5 sm:p-6 border border-slate-800 flex flex-col justify-between">
             <div class="space-y-3">
-              <div class="flex text-amber-400 text-sm gap-1">
+              <div class="flex text-amber-400 text-xs sm:text-sm gap-1">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               </div>
-              <p class="text-sm text-slate-300 italic">
+              <p class="text-xs sm:text-sm text-slate-300 italic">
                 "Mi laptop tardaba 10 minutos en encender y se congelaba con cualquier programa. Le cambió el disco por un SSD y le puso Windows 11. Ahora vuela en 12 segundos. Excelente trabajo y muy honesto."
               </p>
             </div>
-            <div class="flex items-center gap-3 pt-6 border-t border-slate-800/80 mt-4">
-              <div class="w-10 h-10 rounded-full bg-sky-500/20 text-sky-400 font-bold flex items-center justify-center text-sm">
+            <div class="flex items-center gap-3 pt-5 sm:pt-6 border-t border-slate-800/80 mt-4">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-sky-500/20 text-sky-400 font-bold flex items-center justify-center text-xs sm:text-sm shrink-0">
                 CR
               </div>
               <div>
-                <h5 class="text-sm font-bold text-white">Carlos Ramírez</h5>
-                <span class="text-xs text-slate-400">Estudiante Universitario</span>
+                <h5 class="text-xs sm:text-sm font-bold text-white">Carlos Ramírez</h5>
+                <span class="text-[11px] sm:text-xs text-slate-400 block">Estudiante Universitario</span>
               </div>
             </div>
           </div>
 
           <!-- Testimonio 2 -->
-          <div class="glass-card rounded-2xl p-6 border border-slate-800 flex flex-col justify-between">
+          <div class="glass-card rounded-2xl p-5 sm:p-6 border border-slate-800 flex flex-col justify-between">
             <div class="space-y-3">
-              <div class="flex text-amber-400 text-sm gap-1">
+              <div class="flex text-amber-400 text-xs sm:text-sm gap-1">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               </div>
-              <p class="text-sm text-slate-300 italic">
+              <p class="text-xs sm:text-sm text-slate-300 italic">
                 "La computadora de mi oficina se apagaba de repente por calentamiento. Vino a domicilio, le hizo limpieza profunda y cambio de pasta térmica. Quedó silenciosa y como nueva. Lo recomiendo al 100%."
               </p>
             </div>
-            <div class="flex items-center gap-3 pt-6 border-t border-slate-800/80 mt-4">
-              <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-sm">
+            <div class="flex items-center gap-3 pt-5 sm:pt-6 border-t border-slate-800/80 mt-4">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-xs sm:text-sm shrink-0">
                 MP
               </div>
               <div>
-                <h5 class="text-sm font-bold text-white">Mariana Peña</h5>
-                <span class="text-xs text-slate-400">Diseñadora Gráfica</span>
+                <h5 class="text-xs sm:text-sm font-bold text-white">Mariana Peña</h5>
+                <span class="text-[11px] sm:text-xs text-slate-400 block">Diseñadora Gráfica</span>
               </div>
             </div>
           </div>
 
           <!-- Testimonio 3 -->
-          <div class="glass-card rounded-2xl p-6 border border-slate-800 flex flex-col justify-between">
+          <div class="glass-card rounded-2xl p-5 sm:p-6 border border-slate-800 flex flex-col justify-between">
             <div class="space-y-3">
-              <div class="flex text-amber-400 text-sm gap-1">
+              <div class="flex text-amber-400 text-xs sm:text-sm gap-1">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               </div>
-              <p class="text-sm text-slate-300 italic">
+              <p class="text-xs sm:text-sm text-slate-300 italic">
                 "Pensé que había perdido todas las fotos y facturas de mi disco duro dañado. Logró recuperar toda la información intacta e instaló los programas que necesitaba para trabajar. Un salvavidas."
               </p>
             </div>
-            <div class="flex items-center gap-3 pt-6 border-t border-slate-800/80 mt-4">
-              <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm">
+            <div class="flex items-center gap-3 pt-5 sm:pt-6 border-t border-slate-800/80 mt-4">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-xs sm:text-sm shrink-0">
                 JA
               </div>
               <div>
-                <h5 class="text-sm font-bold text-white">José Alberto Gómez</h5>
-                <span class="text-xs text-slate-400">Comerciante</span>
+                <h5 class="text-xs sm:text-sm font-bold text-white">José Alberto Gómez</h5>
+                <span class="text-[11px] sm:text-xs text-slate-400 block">Comerciante</span>
               </div>
             </div>
           </div>
@@ -693,25 +693,25 @@
     <!-- =========================================================================
          PREGUNTAS FRECUENTES (FAQ)
          ========================================================================= -->
-    <section id="faq" class="py-20 bg-slate-950">
+    <section id="faq" class="py-14 sm:py-20 bg-slate-950">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center mb-14">
+        <div class="text-center mb-10 sm:mb-14">
           <span class="text-xs uppercase tracking-widest text-sky-400 font-bold">Respuestas Claras</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Preguntas Frecuentes</h2>
-          <p class="text-slate-400 text-sm mt-2">Todo lo que necesitas saber antes de traer o entregar tu equipo.</p>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Preguntas Frecuentes</h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-2">Todo lo que necesitas saber antes de traer o entregar tu equipo.</p>
         </div>
 
-        <div class="space-y-4">
+        <div class="space-y-3.5 sm:space-y-4">
           
           <!-- Pregunta 1 -->
           <div class="glass-card rounded-xl border border-slate-800 overflow-hidden">
-            <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between text-base font-semibold text-white hover:text-sky-400 transition-colors focus:outline-none">
+            <button class="faq-button w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between text-sm sm:text-base font-semibold text-white hover:text-sky-400 transition-colors focus:outline-none gap-3">
               <span>¿Se van a borrar mis fotos o archivos al formatear o reparar?</span>
-              <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform duration-300"></i>
+              <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform duration-300 shrink-0"></i>
             </button>
-            <div class="faq-answer px-6 text-sm text-slate-400 border-t border-slate-800/40">
-              <p class="py-4">
+            <div class="faq-answer px-4 sm:px-6 text-xs sm:text-sm text-slate-400 border-t border-slate-800/40">
+              <p class="py-3.5 sm:py-4">
                 ¡No te preocupes! Antes de realizar cualquier formateo o intervención del sistema operativo, realizo un respaldo (backup) completo y seguro de tus fotos, documentos, música y archivos personales para que no pierdas absolutamente nada.
               </p>
             </div>
@@ -719,12 +719,12 @@
 
           <!-- Pregunta 2 -->
           <div class="glass-card rounded-xl border border-slate-800 overflow-hidden">
-            <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between text-base font-semibold text-white hover:text-sky-400 transition-colors focus:outline-none">
+            <button class="faq-button w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between text-sm sm:text-base font-semibold text-white hover:text-sky-400 transition-colors focus:outline-none gap-3">
               <span>¿Cuánto tiempo demora la reparación de mi computadora?</span>
-              <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform duration-300"></i>
+              <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform duration-300 shrink-0"></i>
             </button>
-            <div class="faq-answer px-6 text-sm text-slate-400 border-t border-slate-800/40">
-              <p class="py-4">
+            <div class="faq-answer px-4 sm:px-6 text-xs sm:text-sm text-slate-400 border-t border-slate-800/40">
+              <p class="py-3.5 sm:py-4">
                 La gran mayoría de servicios como formateos, mantenimiento térmico, eliminación de virus e instalación de programas se entregan el <strong class="text-white">mismo día (en un lapso de 3 a 6 horas)</strong>. En diagnósticos complejos de circuitos electrónicos en placa madre o componentes específicos, suele demorar entre 24 y 48 horas.
               </p>
             </div>
@@ -732,12 +732,12 @@
 
           <!-- Pregunta 3 -->
           <div class="glass-card rounded-xl border border-slate-800 overflow-hidden">
-            <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between text-base font-semibold text-white hover:text-sky-400 transition-colors focus:outline-none">
+            <button class="faq-button w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between text-sm sm:text-base font-semibold text-white hover:text-sky-400 transition-colors focus:outline-none gap-3">
               <span>¿Ofreces servicio a domicilio o debo llevar el equipo?</span>
-              <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform duration-300"></i>
+              <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform duration-300 shrink-0"></i>
             </button>
-            <div class="faq-answer px-6 text-sm text-slate-400 border-t border-slate-800/40">
-              <p class="py-4">
+            <div class="faq-answer px-4 sm:px-6 text-xs sm:text-sm text-slate-400 border-t border-slate-800/40">
+              <p class="py-3.5 sm:py-4">
                 Ofrezco ambas opciones: puedo acudir directamente a tu domicilio u oficina para mayor comodidad, o puedes traer tu equipo a mi taller técnico. También cuento con soporte remoto por internet para configuraciones rápidas de software.
               </p>
             </div>
@@ -745,12 +745,12 @@
 
           <!-- Pregunta 4 -->
           <div class="glass-card rounded-xl border border-slate-800 overflow-hidden">
-            <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between text-base font-semibold text-white hover:text-sky-400 transition-colors focus:outline-none">
+            <button class="faq-button w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between text-sm sm:text-base font-semibold text-white hover:text-sky-400 transition-colors focus:outline-none gap-3">
               <span>¿Qué marcas de computadoras atiendes?</span>
-              <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform duration-300"></i>
+              <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform duration-300 shrink-0"></i>
             </button>
-            <div class="faq-answer px-6 text-sm text-slate-400 border-t border-slate-800/40">
-              <p class="py-4">
+            <div class="faq-answer px-4 sm:px-6 text-xs sm:text-sm text-slate-400 border-t border-slate-800/40">
+              <p class="py-3.5 sm:py-4">
                 Reparo todas las marcas del mercado: Dell, HP, Lenovo, ASUS, Acer, Toshiba, Samsung, computadoras ensambladas a medida (gaming/oficina) y equipos Apple (MacBook e iMac).
               </p>
             </div>
@@ -758,12 +758,12 @@
 
           <!-- Pregunta 5 -->
           <div class="glass-card rounded-xl border border-slate-800 overflow-hidden">
-            <button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between text-base font-semibold text-white hover:text-sky-400 transition-colors focus:outline-none">
+            <button class="faq-button w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between text-sm sm:text-base font-semibold text-white hover:text-sky-400 transition-colors focus:outline-none gap-3">
               <span>¿Qué garantía tienen los trabajos realizados?</span>
-              <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform duration-300"></i>
+              <i class="fa-solid fa-chevron-down faq-icon text-slate-400 transition-transform duration-300 shrink-0"></i>
             </button>
-            <div class="faq-answer px-6 text-sm text-slate-400 border-t border-slate-800/40">
-              <p class="py-4">
+            <div class="faq-answer px-4 sm:px-6 text-xs sm:text-sm text-slate-400 border-t border-slate-800/40">
+              <p class="py-3.5 sm:py-4">
                 Todos los trabajos cuentan con garantía por escrito de 30 a 90 días (y hasta 1 año en repuestos nuevos como discos SSD). Si surge algún inconveniente relacionado al servicio prestado, te atiendo con prioridad sin costo adicional.
               </p>
             </div>
@@ -777,55 +777,55 @@
     <!-- =========================================================================
          SECCIÓN DE CONTACTO
          ========================================================================= -->
-    <section id="contacto" class="py-20 bg-slate-900/60 border-t border-slate-800">
+    <section id="contacto" class="py-14 sm:py-20 bg-slate-900/60 border-t border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           
           <!-- INFORMACIÓN DE CONTACTO DIRECTO -->
-          <div class="lg:col-span-5 space-y-6">
+          <div class="lg:col-span-5 space-y-5 sm:space-y-6">
             <span class="text-xs uppercase tracking-widest text-sky-400 font-bold">Atención Personalizada</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">¿Tienes dudas o necesitas ayuda ya?</h2>
-            <p class="text-slate-300 text-sm leading-relaxed">
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white">¿Tienes dudas o necesitas ayuda ya?</h2>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
               Escríbeme o llámame para darte una solución rápida. Te atenderé con gusto para orientarte sobre la mejor alternativa para tu equipo.
             </p>
 
-            <div class="space-y-4 pt-2">
-              <div class="flex items-center gap-4 text-sm text-slate-300">
-                <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center text-xl shrink-0">
+            <div class="space-y-3.5 sm:space-y-4 pt-2">
+              <div class="flex items-center gap-3.5 sm:gap-4 text-xs sm:text-sm text-slate-300">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center text-lg sm:text-xl shrink-0">
                   <i class="fa-brands fa-whatsapp"></i>
                 </div>
                 <div>
-                  <span class="text-xs text-slate-400 block font-medium">WhatsApp / Teléfono</span>
-                  <span class="font-bold text-white text-base business-phone">+58 414 913-6597</span>
+                  <span class="text-[11px] sm:text-xs text-slate-400 block font-medium">WhatsApp / Teléfono</span>
+                  <span class="font-bold text-white text-sm sm:text-base business-phone">+58 414 913-6597</span>
                 </div>
               </div>
 
-              <div class="flex items-center gap-4 text-sm text-slate-300">
-                <div class="w-11 h-11 rounded-xl bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center justify-center text-lg shrink-0">
+              <div class="flex items-center gap-3.5 sm:gap-4 text-xs sm:text-sm text-slate-300">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center justify-center text-base sm:text-lg shrink-0">
                   <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <div>
-                  <span class="text-xs text-slate-400 block font-medium">Ubicación y Cobertura</span>
-                  <span class="font-bold text-white text-base">Servicio a Domicilio & Taller Físico</span>
+                  <span class="text-[11px] sm:text-xs text-slate-400 block font-medium">Ubicación y Cobertura</span>
+                  <span class="font-bold text-white text-sm sm:text-base">Servicio a Domicilio & Taller Físico</span>
                 </div>
               </div>
 
-              <div class="flex items-center gap-4 text-sm text-slate-300">
-                <div class="w-11 h-11 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center text-lg shrink-0">
+              <div class="flex items-center gap-3.5 sm:gap-4 text-xs sm:text-sm text-slate-300">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center text-base sm:text-lg shrink-0">
                   <i class="fa-regular fa-clock"></i>
                 </div>
                 <div>
-                  <span class="text-xs text-slate-400 block font-medium">Horario de Atención</span>
-                  <span class="font-bold text-white text-base business-schedule">Lunes a Sábado: 8:00 AM a 7:00 PM</span>
+                  <span class="text-[11px] sm:text-xs text-slate-400 block font-medium">Horario de Atención</span>
+                  <span class="font-bold text-white text-sm sm:text-base business-schedule">Lunes a Sábado: 8:00 AM a 7:00 PM</span>
                 </div>
               </div>
             </div>
 
             <!-- Botón directo -->
-            <div class="pt-4">
-              <a href="https://wa.me/584149136597?text=Hola%2C%20necesito%20soporte%20t%C3%A9cnico%20para%20mi%20computadora" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-emerald-600/20 transition-all hover:scale-105">
-                <i class="fa-brands fa-whatsapp text-xl"></i>
+            <div class="pt-2 sm:pt-4">
+              <a href="https://wa.me/584149136597?text=Hola%2C%20necesito%20soporte%20t%C3%A9cnico%20para%20mi%20computadora" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-emerald-600/20 text-sm transition-all hover:scale-105">
+                <i class="fa-brands fa-whatsapp text-lg sm:text-xl"></i>
                 <span>Chatear ahora mismo</span>
               </a>
             </div>
@@ -834,27 +834,27 @@
 
           <!-- FORMULARIO RÁPIDO -->
           <div class="lg:col-span-7">
-            <div class="glass-card rounded-2xl p-6 sm:p-8 border border-slate-800">
-              <h3 class="text-xl font-bold text-white mb-2">Envía un Mensaje Directo</h3>
-              <p class="text-xs text-slate-400 mb-6">Completa los campos y se redactará un mensaje automático directo a mi WhatsApp para atenderte de inmediato.</p>
+            <div class="glass-card rounded-2xl p-5 sm:p-8 border border-slate-800">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-1.5 sm:mb-2">Envía un Mensaje Directo</h3>
+              <p class="text-xs text-slate-400 mb-5 sm:mb-6">Completa los campos y se redactará un mensaje automático directo a mi WhatsApp para atenderte de inmediato.</p>
 
-              <form id="quick-contact-form" class="space-y-4">
+              <form id="quick-contact-form" class="space-y-3.5 sm:space-y-4">
                 <div>
                   <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Tu Nombre</label>
-                  <input type="text" id="cf-name" required placeholder="Ej: Roberto Pérez" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-sky-500 transition-colors">
+                  <input type="text" id="cf-name" required placeholder="Ej: Roberto Pérez" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-sky-500 transition-colors">
                 </div>
 
                 <div>
                   <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Teléfono / WhatsApp</label>
-                  <input type="tel" id="cf-phone" required placeholder="Ej: 0414 913 6597" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-sky-500 transition-colors">
+                  <input type="tel" id="cf-phone" required placeholder="Ej: 0414 913 6597" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-sky-500 transition-colors">
                 </div>
 
                 <div>
                   <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Describe la falla o servicio que necesitas</label>
-                  <textarea id="cf-message" rows="3" required placeholder="Ej: Necesito instalar Windows 11 y hacerle mantenimiento físico a mi laptop Lenovo..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-sky-500 transition-colors resize-none"></textarea>
+                  <textarea id="cf-message" rows="3" required placeholder="Ej: Necesito instalar Windows 11 y hacerle mantenimiento físico a mi laptop Lenovo..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-3 text-white text-xs sm:text-sm focus:outline-none focus:border-sky-500 transition-colors resize-none"></textarea>
                 </div>
 
-                <button type="submit" class="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-sky-600/25 transition-all text-sm flex items-center justify-center gap-2">
+                <button type="submit" class="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-sky-600/25 transition-all text-xs sm:text-sm flex items-center justify-center gap-2">
                   <i class="fa-solid fa-paper-plane"></i>
                   <span>Enviar Consulta</span>
                 </button>
@@ -872,12 +872,12 @@
   <!-- =========================================================================
        FOOTER
        ========================================================================= -->
-  <footer class="bg-slate-950 border-t border-slate-900 py-12 text-slate-400 text-xs">
+  <footer class="bg-slate-950 border-t border-slate-900 py-8 sm:py-12 text-slate-400 text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-5 sm:gap-6">
         
         <div class="flex items-center gap-3">
-          <div class="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold">
+          <div class="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold shrink-0">
             <i class="fa-solid fa-screwdriver-wrench"></i>
           </div>
           <div>
@@ -886,7 +886,7 @@
           </div>
         </div>
 
-        <div class="flex items-center gap-6 flex-wrap justify-center text-slate-400">
+        <div class="flex items-center gap-4 sm:gap-6 flex-wrap justify-center text-slate-400 text-xs">
           <a href="#inicio" class="hover:text-white transition-colors">Inicio</a>
           <a href="#servicios" class="hover:text-white transition-colors">Servicios</a>
           <a href="#cotizador" class="hover:text-white transition-colors">Cotizador</a>
@@ -894,9 +894,9 @@
           <a href="#contacto" class="hover:text-white transition-colors">Contacto</a>
         </div>
 
-        <p class="text-slate-500 text-center md:text-right">
+        <p class="text-slate-500 text-center md:text-right text-[11px] sm:text-xs">
           &copy; <span id="year">2026</span> Todos los derechos reservados.<br>
-          <span class="text-slate-600 text-[10px]">Página diseñada para captación de clientes y soporte local.</span>
+          <span class="text-slate-600 text-[10px]">Desarrollado por: Osman Garuti</span>
         </p>
 
       </div>
@@ -906,8 +906,8 @@
   <!-- =========================================================================
        BOTÓN FLOTANTE PERMANENTE DE WHATSAPP CON PULSO
        ========================================================================= -->
-  <a id="float-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="floating-whatsapp flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-white font-bold p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl whatsapp-pulse" title="Contactar por WhatsApp">
-    <i class="fa-brands fa-whatsapp text-2xl sm:text-2xl"></i>
+  <a id="float-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="floating-whatsapp flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-white font-bold p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl whatsapp-pulse z-50 fixed bottom-5 right-5" title="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
     <span class="hidden sm:inline text-sm">¿Ayuda con tu PC?</span>
   </a>
 
